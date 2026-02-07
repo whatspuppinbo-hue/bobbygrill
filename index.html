@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bobby Grill – Döner & Grill in Jübek</title>
+    <meta name="description"
+        content="Döner, Dürüm & Grill – frisch zubereitet in Jübek. Jetzt anrufen oder Abholung planen." />
+
+    <!-- Optional favicon (wenn du eins hast) -->
+    <!-- <link rel="icon" href="assets/img/favicon.png" /> -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- LocalBusiness Schema (SEO) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bobby Grill",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bahnhofstraße 1",
+      "postalCode": "24855",
+      "addressLocality": "Jübek",
+      "addressCountry": "DE"
+    },
+    "telephone": "+49 4625 187743",
+    "servesCuisine": ["Türkisch", "Orientalisch", "Grill"],
+    "priceRange": "€"
+  }
+  </script>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <a class="brand" href="#top">
+                <!-- Optional Logo -->
+                 <img class="brand__logo" src="assets/img/hero__img.jpg" alt="Bobby Grill Logo" /> 
+                <span class="brand__name">Bobby Grill</span>
+            </a>
+
+            <nav class="nav">
+                <a class="nav__link" href="#menu">Menü</a>
+                <a class="nav__link" href="#standort">Standort</a>
+                <a class="btn btn--primary" href="tel:+494625187743">Jetzt anrufen</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="card hero__card">
+                    <div class="pill">🔥 Frisch vom Grill · 🥙 Döner & Dürüm · 🚶 Abholung</div>
+
+                    <h1>Döner, Dürüm & Grill<br />in Jübek</h1>
+
+                    <p class="muted">
+                        Schnell, frisch, ehrlich. Bestell per Anruf oder WhatsApp – direkt in der Bahnhofstraße.
+                    </p>
+
+                    <div class="cta">
+                        <a class="btn btn--primary" href="tel:+494625187743">📞 Anrufen</a>
+                        <a class="btn" target="_blank" rel="noreferrer" href="https://wa.me/494625187743">💬
+                            WhatsApp</a>
+                        <a class="btn" href="#standort">📍 Route</a>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature">
+                            <b>Top-Seller</b>
+                            <span class="muted">Döner · Dürüm · Teller</span>
+                        </div>
+                        <div class="feature">
+                            <b>Abholung</b>
+                            <span class="muted">Vorbestellen & abholen</span>
+                        </div>
+                        <div class="feature">
+                            <b>Zeit sparen</b>
+                            <span class="muted">Click-to-call in 1 Tap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hero__info">
+                    <!-- Optional Hero-Bild -->
+                    <img class="hero__img" src="assets/img/hero__img.jpg" alt="Bobby Grill Essen" /> 
+
+                    <h2>Heute geöffnet?</h2>
+
+                    <table class="hours">
+                        <tr>
+                            <th>Montag</th>
+                            <td><b>Geschlossen</b></td>
+                        </tr>
+                        <tr>
+                            <th>Dienstag</th>
+                            <td>12:00–22:00</td>
+                        </tr>
+                        <tr>
+                            <th>Mittwoch</th>
+                            <td>12:00–22:00</td>
+                        </tr>
+                        <tr>
+                            <th>Donnerstag</th>
+                            <td>12:00–22:00</td>
+                        </tr>
+                        <tr>
+                            <th>Freitag</th>
+                            <td>12:00–22:00</td>
+                        </tr>
+                        <tr>
+                            <th>Samstag</th>
+                            <td>12:00–22:00</td>
+                        </tr>
+                        <tr>
+                            <th>Sonntag</th>
+                            <td>12:00–22:00</td>
+                        </tr>
+                    </table>
+                    <p class="muted small"><strong>Lieferservice</strong>: täglich 16:30–21:00 Uhr.</p>
+
+                    <p class="muted" id="openNow"><strong>Öffnungszeiten prüfen</strong></p>
+
+                    <div class="divider"></div>
+
+                    <p><b>Adresse</b><br />Bahnhofstraße 1, 24855 Jübek</p>
+                    <p><b>Telefon</b><br /><a class="link" href="tel:+494625187743">+49 4625 187743</a></p>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="menu">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Menü</h2>
+                    <p class="muted">Beispiel-Items – du kannst Preise/Einträge in <code>assets/js/main.js</code>
+                        ändern.</p>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    <!-- wird per JS befüllt -->
+                </div>
+
+                <div class="card menu-card">
+                    <div class="menu-card__left">
+                        <h3>Speisekarte als Foto/PDF</h3>
+                        <p class="muted">
+                            Wenn du ein Foto hast, lade es als <code>assets/img/menu.jpg</code> hoch.
+                        </p>
+                        <button class="btn" id="openMenuImage">📄 Speisekarte ansehen</button>
+                    </div>
+
+                    <!-- Optional Vorschau -->
+                    <div class="menu-card__right">
+                        <!-- <img class="menu-preview" src="assets/img/menu.jpg" alt="Speisekarte" /> -->
+                        <div class="menu-preview__placeholder muted">
+                            (Optional: Vorschau aktivieren, wenn menu.jpg vorhanden ist)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="standort">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Standort</h2>
+                    <p class="muted">Bahnhofstraße 1, 24855 Jübek</p>
+                </div>
+
+                <div class="two-col">
+                    <div class="card">
+                        <h3>So findest du uns</h3>
+                        <p class="muted">Abholung möglich – am besten kurz anrufen.</p>
+
+                        <div class="cta">
+                            <a class="btn btn--primary" target="_blank" rel="noreferrer"
+                                href="https://www.google.com/maps/search/?api=1&query=Bahnhofstra%C3%9Fe+1+24855+J%C3%BCbek">
+                                🗺️ Route öffnen
+                            </a>
+                            <a class="btn" href="tel:+494625187743">📞 Anrufen</a>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <p class="muted small">
+                            Wenn du später Google Reviews einbinden willst: erst Link setzen, dann ggf. Widget/Embed.
+                        </p>
+                    </div>
+
+                    <div class="card map-card" aria-label="Karte">
+                        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=Bahnhofstra%C3%9Fe%201%2024855%20J%C3%BCbek&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="card">
+                    <h2>Rechtliches</h2>
+                    <p class="muted">
+                        Impressum und Datenschutz sind Pflicht (DE). Du findest Platzhalter-Seiten:
+                        <a class="link" href="impressum.html">Impressum</a> und
+                        <a class="link" href="datenschutz.html">Datenschutz</a>.
+                    </p>
+                </div>
+
+                <footer class="footer">
+                    <span class="muted">© <span id="year"></span> Bobby Grill</span>
+                    <a class="link" href="impressum.html">Impressum</a>
+                    <a class="link" href="datenschutz.html">Datenschutz</a>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal (für Speisekarte Bild) -->
+    <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal__backdrop" id="modalBackdrop"></div>
+        <div class="modal__content" role="dialog" aria-modal="true" aria-label="Speisekarte">
+            <button class="modal__close" id="modalClose" aria-label="Schließen">✕</button>
+            <img id="modalImg" alt="Speisekarte" />
+            <p class="muted small" id="modalHint"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
